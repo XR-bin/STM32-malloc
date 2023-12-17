@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+"..\..\output\startup_stm32f10x_hd.o"
+"..\..\output\core_cm3.o"
+"..\..\output\main.o"
+"..\..\output\stm32f10x_it.o"
+"..\..\output\system_stm32f10x.o"
+"..\..\output\sys.o"
+"..\..\output\delay.o"
+"..\..\output\usart.o"
+"..\..\output\misc.o"
+"..\..\output\stm32f10x_rcc.o"
+"..\..\output\stm32f10x_gpio.o"
+"..\..\output\stm32f10x_dbgmcu.o"
+"..\..\output\stm32f10x_usart.o"
+"..\..\output\led.o"
+"..\..\output\malloc.o"
+--strict --scatter "..\..\Output\STM32F103ZET6.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\..\Output\STM32F103ZET6.map" -o ..\..\Output\STM32F103ZET6.axf
